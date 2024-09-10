@@ -3,6 +3,7 @@ import { ArrowUpRight } from 'lucide-react';
 import { useState } from "react";
 import logo from "../assets/logo.png";
 import { navItems } from "../constants";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
@@ -42,7 +43,8 @@ const Navbar = () => {
             <ul>
               {navItems.map((item, index) => (
                 <li key={index} className="py-4">
-                  <a href={item.href}>{item.label}</a>
+                  <Link to={item.href}>{item.label}</Link>
+                  {/* <a href={item.href}>{item.label}</a> */}
                 </li>
               ))}
             </ul>

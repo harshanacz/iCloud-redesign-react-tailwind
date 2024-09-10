@@ -1,5 +1,7 @@
 
+
+
 //Navbar
 export const navItems = [
-  { label: "User Guide", href: "#" },
+  { label: "User Guide", href: "/guide" },
 ];
