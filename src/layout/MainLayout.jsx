@@ -1,11 +1,11 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
+import GlobalNavbar from '../components/GlobalNavbar'
 
-const MainLayout = ({childern}) => {
+const MainLayout = ({children}) => {
   return (
     <div>
-      <Navbar />
-        <div>{childern}</div>
+      <GlobalNavbar />
+      <div>{children}</div>
     </div>
   )
 }
