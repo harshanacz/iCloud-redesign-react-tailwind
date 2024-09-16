@@ -1,27 +1,47 @@
 import React from 'react'
-import MainLayout from '../layout/MainLayout'
-import logo from "../assets/userGuidePage/1.png";
+import logo from "../assets/logo.png";
+import headingPic from "../assets/userGuidePage/1.png";
 import { ArrowUpRight } from 'lucide-react';
+import UserGuideIntro from '../components/UserGuideIntro';
+import UserGuideTableofContext from '../components/UserGuideTableofContext';
+import { Link } from 'react-router-dom';
 
 
 const UserGuidePage = () => {
+
+
   return (
-    <MainLayout>
 
-<div className='mp-8 pt-8 mp-12 px-32 flex flex-col justify-center items-center bg-white'>
-  <h1 className='text-4xl font-semibold'>iCloud User Guide</h1>
-  
-  <img src={logo} alt='iCloud' className='w-1/2 mt-8'/>
-  <h1 className='text-3xl font-semibold mt-8'>What is iCloud?</h1>
-  <p className='mt-2 text-center font-light'>iCloud is the service from Apple that securely stores your personal information, keeps it up to date on all your devices, and makes it easy to share your photos, files, and more with friends and family.</p>
- <a href='' className="text-blue-800 text-sm font-light flex items-center mt-4">
- Get an introduction to iCloud
-                <ArrowUpRight className="ml-1 w-4 h-4" />
-              </a>
-</div>
+    <div className='mp-8 pt-8 mp-12 px-32 flex flex-col justify-center items-center bg-white'>
+
+      <Link to="/">
+        <img className="h-10  mr-2" src={logo} alt="Logo" />
+      </Link>
+      <h1 className='text-4xl font-semibold'>User Guide</h1>
+      <UserGuideTableofContext />
+      <hr className='w-full border-gray-200 mt-8 mp-4' />
+      <img src={headingPic} alt='iCloud' className='w-1/2 mt-16 mb-4' />
+
+      {/*   iCloud basics */}
+      <div id='icloud-basics' className='flex flex-col items-center'>
+      <h1 className='text-3xl font-semibold mt-12'>What is iCloud?</h1>
+      <p className='mt-4 text-center text-2xl font-light mb-2'>iCloud is the service from Apple that securely stores your personal information, keeps it up to date on all your devices, and makes it easy to share your photos, files, and more with friends and family.</p>
+      <a href='' className="text-blue-800 text-2xl font-light flex items-center mt-2">
+        Get an introduction to iCloud
+        <ArrowUpRight className="ml-1 w-4 h-4" />
+      </a>
+      </div>
 
 
-    </MainLayout>
+      {/*   What’s included in iCloud+ */}
+
+      <hr className='w-full border-gray-200 mt-16 mp-4' />
+
+      <UserGuideIntro />
+    </div>
+
+
+
   )
 }
 
