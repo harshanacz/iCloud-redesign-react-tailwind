@@ -37,7 +37,13 @@ const UserGuidePage = () => {
 
       <hr className='w-full border-gray-200 mt-16 mp-4' />
 
-      <UserGuideIntro />
+      <UserGuideIntro />  <hr className='w-full border-gray-200 mt-16 mp-4 mb-12' />
+      <h2 className='text-left mb-20'>
+  To explore the iCloud User Guide, click Table of Contents at the top of the page, or enter a word or phrase in the search field.
+  <br />
+  If you need more help, visit the <a href="https://support.apple.com/icloud" className="text-blue-800">iCloud Support website</a>.
+</h2>
+
     </div>
 
 

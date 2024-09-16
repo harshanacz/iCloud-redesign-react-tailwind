@@ -27,20 +27,23 @@ export const tableOfContext = [
 //Intro section
 export const intro = [
   {
-    title: "Grow your business with enterprise-grade solutions",
-    description: "Unleash the potential of your small or medium business with Cisco's scalable, easy-to-operate solutions featuring intuitive IT management and round-the-clock support.",
+    title: "Use iCloud with your favorite apps",
+    description: "See the same photos and videos everywhere. Keep your files up to date on all your devices. Store data from your favorite apps and see it anywhere iCloud is turned on.",
     image: intro1,
     right: true,
+    button:"Learn More"
   },
   {
-    title: "Build network assurance expertise with Cisco U.",
-    description: "Harness the power of end-to-end visibility and proactive monitoring with our free tutorials. ",
+    title: "Get more storage and features with iCloud+",
+    description: "When you upgrade to iCloud+, you get more iCloud storage for your photos and files and access to features like iCloud Private Relay and Hide My Email.",
     image: intro2,
     right: false,
+    button:"See what’s"
   },{
-    title: "Build network assurance expertise with Cisco U.",
-    description: "Harness the power of end-to-end visibility and proactive monitoring with our free tutorials. ",
+    title: "Use iCloud on the web",
+    description: "See your mail, photos, files, and more on iCloud.com. They’re safe, up to date, and available wherever you are.",
     image: intro3,
     right: true,
+    button:"Sign in"
   },
 ];

@@ -11,6 +11,7 @@ const UserGuideIntro = () => {
           title={item.title}
           description={item.description}
           image={item.image}
+          button = {item.button}
           right={item.right}
         />
       ))}
