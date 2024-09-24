@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import SignInPage from './pages/SignInPage';
 // import { Import } from 'lucide-react';
 
 const router = createBrowserRouter([
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
     path: "guide",
     element: <UserGuidePage/>,
   },
+  {
+    path: "login",
+    element: <SignInPage/>,
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
